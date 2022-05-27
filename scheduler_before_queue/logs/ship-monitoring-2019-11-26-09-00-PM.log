@@ -1,0 +1,79 @@
+Using TensorFlow backend.
+run_date: 2019-11-26
+date_folder: /home/imagetrekkml/ship-monitoring-data/data/20191126
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Bengkalis.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Bengkalis_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191126/AOI_Bengkalis
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Tanjung_Balai.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Tanjung_Balai_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191126/AOI_Tanjung_Balai
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Dumai.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Dumai_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191126/AOI_Dumai
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Batam.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Batam_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191126/AOI_Batam
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Semiun.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Semiun_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191126/AOI_Semiun
+run_date: 2019-11-25
+date_folder: /home/imagetrekkml/ship-monitoring-data/data/20191125
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Bengkalis.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Bengkalis_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191125/AOI_Bengkalis
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Tanjung_Balai.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Tanjung_Balai_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191125/AOI_Tanjung_Balai
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Dumai.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Dumai_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191125/AOI_Dumai
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Batam.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Batam_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191125/AOI_Batam
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Semiun.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Semiun_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191125/AOI_Semiun
+run_date: 2019-11-24
+date_folder: /home/imagetrekkml/ship-monitoring-data/data/20191124
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Bengkalis.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Bengkalis_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191124/AOI_Bengkalis
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Tanjung_Balai.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Tanjung_Balai_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191124/AOI_Tanjung_Balai
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Dumai.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Dumai_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191124/AOI_Dumai
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Batam.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Batam_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191124/AOI_Batam
+aoi_file: /home/imagetrekkml/ship-monitoring-data/aoi/AOI_Semiun.geojson
+mask_file: /home/imagetrekkml/ship-monitoring-data/landmask/AOI_Semiun_LandMask.geojson
+image_folder: /home/imagetrekkml/ship-monitoring-data/data/20191124/AOI_Semiun
+Traceback (most recent call last):
+  File "/home/imagetrekkml/scheduler-before-queue/main.py", line 166, in <module>
+    run_specific_day(_date, _configuration, _execution_folder)
+  File "/home/imagetrekkml/scheduler-before-queue/main.py", line 118, in run_specific_day
+    item_type, asset_type)
+  File "/home/imagetrekkml/scheduler-before-queue/ship_monitoring_analysis/tasks/search_new_items.py", line 7, in search_all_items
+    date, item_type=item_type, asset_type=asset_type)
+  File "/home/imagetrekkml/scheduler-before-queue/ship_monitoring_analysis/api/planet_api/search.py", line 117, in search_downloadable_planet_scenes
+    result = client.quick_search(request)
+  File "/home/imagetrekkml/miniconda3/envs/shipenv/lib/python3.6/site-packages/planet/api/client.py", line 164, in quick_search
+    body_type=models.Items, data=body, method='POST')).get_body()
+  File "/home/imagetrekkml/miniconda3/envs/shipenv/lib/python3.6/site-packages/planet/api/models.py", line 45, in get_body
+    resp = self._dispatcher._dispatch(self.request)
+  File "/home/imagetrekkml/miniconda3/envs/shipenv/lib/python3.6/site-packages/planet/api/dispatch.py", line 155, in _dispatch
+    return _do_request(self.session, request)
+  File "/home/imagetrekkml/miniconda3/envs/shipenv/lib/python3.6/site-packages/planet/api/dispatch.py", line 125, in _do_request
+    check_status(resp)
+  File "/home/imagetrekkml/miniconda3/envs/shipenv/lib/python3.6/site-packages/planet/api/utils.py", line 92, in check_status
+    raise exceptions.APIException('%s: %s' % (status, response.text))
+planet.api.exceptions.APIException: 502: <html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.15.10</center>
+</body>
+</html>
+
